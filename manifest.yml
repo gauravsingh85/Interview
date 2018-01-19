@@ -4,11 +4,6 @@ applications:
   memory: 128M 
   path: .
   buildpack: https://github.com/cloudfoundry/php-buildpack
-  host: wordpress-on
+  host: wordpress-GS
   services:
-  - mysql-db
-  env:
-    SSH_HOST: user@your-ssh-server
-    SSH_PATH: /full/or/relative/path/on/ssh/server
-    SSH_KEY_NAME: sshfs_rsa
-    SSH_OPTS: '["cache=yes", "kernel_cache", "compression=no", "large_read"]'
+  - my-test-mysql-db
