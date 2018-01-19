@@ -1,9 +1,9 @@
 ---
 applications:
-- name: mywordpress
+- name: mywordpress2
   memory: 128M 
   path: .
   buildpack: https://github.com/cloudfoundry/php-buildpack
-  host: wordpress-GS
+  host: wordpress-GS3
   services:
-  - my-test-mysql-db
+  - my-test-mysql-db2
